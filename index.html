@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chitsanupong Inplub</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="scroll-smooth bg-[#F7F7F7] text-[#111]">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-10 py-6 bg-white">
+  <div class="flex items-center gap-3">
+    
+    <img src="images/Logo.png" class="w-6 h-6 object-contain"/>
+
+    <h1 class="font-semibold">CHITSANUPONG INPLUB</h1>
+  </div>
+
+  <div class="flex gap-8 text-sm">
+    <a href="works.html" class="hover:text-orange-500 transition">WORKS</a>
+    <button onclick="scrollToSection('about')" class="hover:text-orange-500 transition">ABOUT</button>
+    <button onclick="scrollToSection('contact')" class="hover:text-orange-500 transition">CONTACT</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="grid md:grid-cols-2 gap-10 px-10 py-20 items-center">
+
+  <div>
+    <p class="text-sm text-gray-500 mb-2">3D ARTIST / MODELER</p>
+
+    <h1 class="text-5xl font-bold leading-tight mb-6">
+      CHITSANUPONG <br/> INPLUB
+    </h1>
+
+    <p class="text-gray-600 mb-8">
+      I create 3D models, voxel art, and digital experiences with a clean and professional approach.
+    </p>
+
+    <div class="flex gap-4">
+      <a href="works.html" 
+        class="bg-black text-white px-6 py-3 rounded-lg hover:bg-orange-500 transition">
+        View Work
+      </a>
+
+      <button onclick="scrollToContact()" class="border px-6 py-3 rounded-lg hover:border-orange-500 hover:text-orange-500 transition">
+        Contact
+      </button>
+    </div>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="flex items-center justify-center">
+    <img src="images/Logo.png" class="max-h-[350px] object-contain"/>
+  </div>
+
+</section>
+
+<!-- WORKS -->
+<section id="works" class="px-10 py-16">
+
+  <!-- HEADER -->
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-semibold">Selected Works</h2>
+
+    <div class="flex gap-2">
+      <button onclick="slideLeft()" class="px-4 py-2 border rounded hover:bg-black hover:text-white transition">
+        ←
+      </button>
+
+      <button onclick="slideRight()" class="px-4 py-2 border rounded hover:bg-black hover:text-white transition">
+        →
+      </button>
+    </div>
+  </div>
+
+  <!-- CAROUSEL -->
+  <div id="carousel" class="flex gap-8 overflow-x-auto scroll-smooth snap-x pb-4">
+
+    <!-- CARD -->
+    <div class="min-w-[480px] snap-start bg-white rounded-2xl shadow hover:scale-[1.03] transition">
+      <img src="images/thesis report.png" class="h-72 w-full object-cover rounded-t-2xl"/>
+      
+      <div class="p-6">
+        <h3 class="text-lg font-semibold">Sign hi - Thai Sign Language Translation App</h3>
+        <p class="text-sm text-gray-500 mt-1">Project • 2026</p>
+      </div>
+    </div>
+
+    <div class="min-w-[480px] snap-start bg-white rounded-2xl shadow hover:scale-[1.03] transition">
+      <img src="images/Screenshot 2026-04-16 035251.png" class="h-72 w-full object-cover rounded-t-2xl"/>
+      
+      <div class="p-6">
+        <h3 class="text-lg font-semibold">EverCare Journey project</h3>
+        <p class="text-sm text-gray-500 mt-1">Project • 2025</p>
+      </div>
+    </div>
+
+
+    <div class="min-w-[480px] snap-start bg-white rounded-2xl shadow hover:scale-[1.03] transition">
+      <img src="images/glasses.png" class="h-72 w-full object-cover rounded-t-2xl"/>
+      
+      <div class="p-6">
+        <h3 class="text-lg font-semibold">Healthsync ActiveGlasses - Product design</h3>
+        <p class="text-sm text-gray-500 mt-1">Product design • 2024</p>
+      </div>
+    </div>
+
+    <div class="min-w-[480px] snap-start bg-white rounded-2xl shadow hover:scale-[1.03] transition">
+      <img src="images/piplup3.png" class="h-72 w-full object-cover rounded-t-2xl"/>
+      
+      <div class="p-6">
+        <h3 class="text-lg font-semibold">Piplub - Pokemon</h3>
+        <p class="text-sm text-gray-500 mt-1">3D Modeling • 2024</p>
+      </div>
+    </div>
+
+    <div class="min-w-[480px] snap-start bg-white rounded-2xl shadow hover:scale-[1.03] transition">
+      <img src="images/Benji HBD.png" class="h-72 w-full object-cover rounded-t-2xl"/>
+      
+      <div class="p-6">
+        <h3 class="text-lg font-semibold">Benjamin the fox</h3>
+        <p class="text-sm text-gray-500 mt-1">3D Modeling • 2023</p>
+      </div>
+    </div>
+
+    <div class="min-w-[480px] snap-start bg-white rounded-2xl shadow hover:scale-[1.03] transition">
+      <img src="images/robot.png" class="h-72 w-full object-cover rounded-t-2xl"/>
+      
+      <div class="p-6">
+        <h3 class="text-lg font-semibold">Aquaphin - Rescue robot</h3>
+        <p class="text-sm text-gray-500 mt-1">Product design • 2023</p>
+      </div>
+    </div>
+    
+  </div>
+
+</section>
+
+<!-- SCRIPT -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.getElementById('carousel');
+
+    window.slideLeft = function () {
+      carousel.scrollBy({
+        left: carousel.clientWidth * -0.8,
+        behavior: 'smooth'
+      });
+    }
+
+    window.slideRight = function () {
+      carousel.scrollBy({
+        left: carousel.clientWidth * 0.8,
+        behavior: 'smooth'
+      });
+    }
+  });
+</script>
+
+<script>
+function scrollToContact() {
+  const section = document.getElementById("contact");
+
+  window.scrollTo({
+    top: section.offsetTop - 80, // กัน navbar บัง
+    behavior: "smooth"
+  });
+}
+</script>
+
+<script>
+function scrollToContact() {
+  const section = document.getElementById("contact");
+
+  section.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+</script>
+
+<script>
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+
+  window.scrollTo({
+    top: section.offsetTop - 80, // กัน navbar บัง
+    behavior: "smooth"
+  });
+}
+</script>
+
+<script>
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+
+<!-- ABOUT -->
+<section id="about" class="px-10 py-20 bg-white grid md:grid-cols-2 gap-10">
+
+
+    <img src="images/tent.png" class="w-full h-[300px] object-contain"/>
+
+  <div>
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+
+    <p class="text-gray-600 mb-6">
+      I'm a 3D artist and modeler specializing in voxel art and digital product design.
+      I enjoy creating meaningful visual experiences with a balance of creativity and clarity.
+    </p>
+
+  <h3 class="font-semibold mb-4">Core Skills</h3>
+
+  <p>Blender</p>
+  <div class="h-2 bg-gray-200 rounded mb-3">
+    <div class="h-2 bg-black w-[85%] rounded"></div>
+  </div>
+
+  <p>VoxEdit</p>
+  <div class="h-2 bg-gray-200 rounded mb-6">
+    <div class="h-2 bg-black w-[65%] rounded"></div>
+  </div>
+
+  <h3 class="font-semibold mb-4">Other Tools</h3>
+
+  <div class="flex flex-wrap gap-2">
+    <span class="px-3 py-1 border rounded">Illustrator</span>
+    <span class="px-3 py-1 border rounded">Photoshop</span>
+    <span class="px-3 py-1 border rounded">Figma</span>
+  </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-10 py-20">
+
+  <h2 class="text-2xl font-semibold mb-6">Let’s Work Together</h2>
+
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <div>
+      <p class="mb-4 text-gray-600">
+        Have a project in mind? Feel free to reach out.
+      </p>
+
+      <p>📧 inplub.chitsanupong@gmail.com</p>
+      <p>📞 086-828-8962</p>
+    </div>
+
+    <form id="contactForm" class="space-y-4">
+
+      <input type="text" name="name" placeholder="Your Name" required
+        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+
+      <input type="email" name="email" placeholder="Your Email" required
+        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+
+      <textarea name="message" placeholder="Your Message" required
+        class="w-full border rounded-lg p-3 h-32 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+
+      <input type="hidden" name="_subject" value="New message from portfolio">
+
+      <button type="submit"
+        class="bg-black text-white px-6 py-3 rounded-lg hover:bg-orange-500 transition active:scale-95">
+        Send Message
+      </button>
+
+    </form>
+
+    <script>
+    const form = document.getElementById("contactForm");
+    const button = form.querySelector("button");
+
+    form.addEventListener("submit", async function(e) {
+      e.preventDefault(); // ❗ หยุด default
+
+      button.innerText = "Sending...";
+      button.disabled = true;
+
+      const data = new FormData(form);
+
+      const response = await fetch("https://formspree.io/f/meevakjr", {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = "thankyou.html"; // ✅ redirect เอง
+      } else {
+        button.innerText = "Send Message";
+        button.disabled = false;
+        alert("Something went wrong");
+      }
+    });
+    </script>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-sm text-gray-500">
+  © 2026 CHITSANUPONG INPLUB
+</footer>
+
+<button id="topBtn" onclick="scrollToTop()" 
+  class="fixed bottom-6 right-6 bg-black text-white w-12 h-12 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-center">
+  ↑
+</button>
+
+<script>
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topBtn.classList.remove("opacity-0", "pointer-events-none");
+  } else {
+    topBtn.classList.add("opacity-0", "pointer-events-none");
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
