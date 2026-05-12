@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -16,16 +16,16 @@
     Project not found
   </div>
 
-  <div id="projectWrap" class="grid grid-cols-12 gap-8 items-start hidden">
+  <div id="projectWrap" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start hidden">
 
-    <div id="thumbs" class="col-span-2 flex flex-col gap-4"></div>
+    <div id="thumbs" class="md:col-span-2 flex md:flex-col gap-4 overflow-x-auto"></div>
 
-    <div class="col-span-6">
+    <div class="md:col-span-6">
       <img id="mainImage"
            class="rounded-xl w-full h-[500px] object-contain shadow cursor-zoom-in hover:scale-[1.02] transition"/>
     </div>
 
-    <div class="col-span-4">
+    <div class="md:col-span-4">
       <h1 id="title" class="text-3xl font-bold mb-2"></h1>
       <p id="meta" class="text-gray-500 mb-4"></p>
       <p id="desc" class="text-gray-600 leading-relaxed mb-6"></p>
@@ -52,11 +52,11 @@
         desc: "This project focuses on designing smart wearable glasses for health monitoring. The objective was to create a product that seamlessly integrates technology into everyday life while maintaining comfort and usability. The design emphasizes ergonomic form, lightweight structure, and modern aesthetics. Special attention was given to how users interact with the device in daily scenarios, ensuring it feels natural and unobtrusive. The final outcome presents a balance between functionality and clean industrial design.",
         tags: ["3D Modeling", "Product Design", "Rendering"],
         media: [
-            { type: "image", src: "images/glasses.png" },
-            { type: "image", src: "images/render5.png" },
-            { type: "image", src: "images/render6.png" },
-            { type: "image", src: "images/render7.png" },
-            { type: "video", src: "videos/Rendered ActiveGlasses.mp4" }
+            { type: "image", src: "../images/glasses.png" },
+            { type: "image", src: "../images/render5.png" },
+            { type: "image", src: "../images/render6.png" },
+            { type: "image", src: "../images/render7.png" },
+            { type: "video", src: "../videos/Rendered ActiveGlasses.mp4" }
         ]
       },
 
@@ -66,9 +66,9 @@
         desc: "Aquaphin is a conceptual rescue robot designed for water-based emergency situations. The project explores how form and functionality can work together to enhance visibility, protection, and performance in critical environments. The design focuses on a compact yet durable structure with strong visual identity, allowing it to stand out in rescue operations. Through this project, I explored industrial design principles, surface detailing, and realistic rendering techniques.",
         tags: ["Product Design", "3D Modeling", "Rendering"],
         media: [
-            { type: "image", src: "images/robot.png" },
-            { type: "image", src: "images/Aquaphin3.png" },
-            { type: "image", src: "images/Aquaphin6.png" }
+            { type: "image", src: "../images/robot.png" },
+            { type: "image", src: "../images/Aquaphin3.png" },
+            { type: "image", src: "../images/Aquaphin6.png" }
         ]
       },
 
@@ -78,10 +78,10 @@
         desc: "Octo One Octave is a smart instrument tuner concept inspired by playful and organic forms. The design aims to make music tools more engaging and approachable, especially for beginners. The octopus-inspired form gives the product a unique identity while maintaining usability. This project explores the intersection of product design and emotional design, focusing on how form can create a memorable user experience.",
         tags: ["Product Design", "3D Modeling"],
         media: [
-            { type: "image", src: "images/product00.png" },
-            { type: "image", src: "images/2.png" },
-            { type: "image", src: "images/3.png" },
-            { type: "image", src: "images/4.png" }
+            { type: "image", src: "../images/product00.png" },
+            { type: "image", src: "../images/2.png" },
+            { type: "image", src: "../images/3.png" },
+            { type: "image", src: "../images/4.png" }
         ]
       },
 
@@ -91,8 +91,8 @@
         desc: "Benjamin the Fox is a character design project focused on creating a friendly and expressive 3D character. The goal was to explore shape language, proportions, and personality through simple geometric forms. The design emphasizes warmth and approachability, making the character suitable for animation or storytelling contexts. This project helped develop my skills in character modeling and visual storytelling.",
         tags: ["3D Model", "Character Design"],
         media: [
-            { type: "image", src: "images/Benji HBD.png" },
-            { type: "image", src: "images/Artboard 33 copy 3.png" },
+            { type: "image", src: "../images/Benji HBD.png" },
+            { type: "image", src: "../images/Artboard 33 copy 3.png" },
         ]
       },
 
@@ -102,10 +102,10 @@
         desc: "Piplub is a fan art 3D model inspired by Pokémon character design. The project focuses on stylized proportions, color harmony, and playful presentation. The goal was to recreate a recognizable character while adding a personal touch through rendering and composition. This work demonstrates my ability to adapt existing design languages into a 3D environment.",
         tags: ["3D Model", "Fan Art"],
         media: [
-            { type: "image", src: "images/piplup3.png" },
-            { type: "image", src: "images/piplup1.png" },
-            { type: "image", src: "images/piplup2.png" },
-            { type: "image", src: "images/piplub HBD 2024.png" },
+            { type: "image", src: "../images/piplup3.png" },
+            { type: "image", src: "../images/piplup1.png" },
+            { type: "image", src: "../images/piplup2.png" },
+            { type: "image", src: "../images/piplub HBD 2024.png" },
         ]
       },
 
@@ -115,11 +115,11 @@
         desc: "EverCare Journey is a concept project that explores travel and health monitoring solutions for senior users. The design focuses on accessibility, clarity, and emotional comfort, aiming to create a positive and stress-free experience. The project combines UI design, service design, and user-centered thinking to address real-world challenges faced by elderly users.",
         tags: ["Project", "UI Design", "Concept"],
         media: [
-            { type: "image", src: "images/Screenshot 2026-04-16 035251.png" },
-            { type: "image", src: "images/Screenshot 2026-04-16 181905.png" },
-            { type: "image", src: "images/Start-left.png" },
-            { type: "video", src: "videos/Media1.mp4" },
-            { type: "video", src: "videos/Media2.mp4" },
+            { type: "image", src: "../images/Screenshot 2026-04-16 035251.png" },
+            { type: "image", src: "../images/Screenshot 2026-04-16 181905.png" },
+            { type: "image", src: "../images/Start-left.png" },
+            { type: "video", src: "../videos/Media1.mp4" },
+            { type: "video", src: "../videos/Media2.mp4" },
         ]
       },
 
@@ -129,9 +129,9 @@
         desc: "Sign Hi is a thesis project that focuses on translating Thai sign language into readable text through a mobile application. The goal is to improve accessibility and communication between hearing-impaired users and the general public. The system integrates gesture recognition with user-friendly interface design. This project highlights my ability to combine technology, design thinking, and social impact into a meaningful digital solution.",
         tags: ["Project", "App Design", "Thesis"],
         media: [
-            { type: "image", src: "images/thesis report.png" },
-            { type: "image", src: "images/Frame 97-left (1).png" },
-            { type: "video", src: "videos/0216(3).mp4" },
+            { type: "image", src: "../images/thesis report.png" },
+            { type: "image", src: "../images/Frame 97-left (1).png" },
+            { type: "video", src: "../videos/0216(3).mp4" },
         ]
       },
 
@@ -141,14 +141,14 @@
         desc: "Smart Condominium is a UX/UI design project that focuses on managing smart living environments through a mobile application. The goal was to create a seamless and intuitive interface for controlling home systems such as lighting, security, and utilities. The design emphasizes clarity, simplicity, and modern aesthetics to enhance user experience in a digital living space.",
         tags: ["UX/UI", "Figma"],
         media: [
-            { type: "image", src: "images/Smart Condo.png" },
-            { type: "image", src: "images/Hom.png" },
-            { type: "image", src: "images/Remote.png" },
-            { type: "image", src: "images/AC Remote 24.png" },
-            { type: "image", src: "images/Light.png" },
-            { type: "image", src: "images/Color pick.png" },
-            { type: "image", src: "images/Remote num.png" },
-            { type: "image", src: "images/Artboard 34 copy 8.png" },
+            { type: "image", src: "../images/Smart Condo.png" },
+            { type: "image", src: "../images/Hom.png" },
+            { type: "image", src: "../images/Remote.png" },
+            { type: "image", src: "../images/AC Remote 24.png" },
+            { type: "image", src: "../images/Light.png" },
+            { type: "image", src: "../images/Color pick.png" },
+            { type: "image", src: "../images/Remote num.png" },
+            { type: "image", src: "../images/Artboard 34 copy 8.png" },
         ]
       },
 
@@ -158,11 +158,11 @@
         desc: "B Cross is a mobile application design project focused on financial services and digital transactions. The design aims to build trust through a clean and modern interface while maintaining usability and accessibility. The project explores layout structure, typography, and visual hierarchy to support a clear and efficient user experience.",
         tags: ["UX/UI", "Mobile App"],
         media: [
-            { type: "image", src: "images/b cross.png" },
-            { type: "image", src: "images/Second enter App 1.png" },
-            { type: "image", src: "images/Home.png" },
-            { type: "image", src: "images/Spending.png" },
-            { type: "image", src: "images/Card.png" },
+            { type: "image", src: "../images/b cross.png" },
+            { type: "image", src: "../images/Second enter App 1.png" },
+            { type: "image", src: "../images/Home.png" },
+            { type: "image", src: "../images/Spending.png" },
+            { type: "image", src: "../images/Card.png" },
         ]
       },
 
@@ -172,9 +172,9 @@
         desc: "Jax is a 3D character modeling project inspired by The Amazing Digital Circus. The focus of this work is on capturing personality through exaggerated proportions and expressive design. The project demonstrates my ability to translate animated character styles into 3D form while maintaining visual appeal and recognizability.",
         tags: ["3D Model", "Character Design"],
         media: [
-            { type: "image", src: "images/jax.png" },
-            { type: "image", src: "images/jax2.png" },
-            { type: "image", src: "images/jax3.png" },
+            { type: "image", src: "../images/jax.png" },
+            { type: "image", src: "../images/jax2.png" },
+            { type: "image", src: "../images/jax3.png" },
         ]
       },
 
@@ -184,11 +184,11 @@
         desc: "This character design project explores original concepts through stylized 3D modeling. The focus is on silhouette, personality, and visual storytelling. By experimenting with proportions and forms, the design aims to create a unique and memorable character identity.",
         tags: ["Character Design", "3D Model"],
         media: [
-            { type: "image", src: "images/Artboard 33 copy 2.png" },
-            { type: "image", src: "images/final0.png" },
-            { type: "image", src: "images/Artboard 334 copy 2.png" },
-            { type: "image", src: "images/final1.png" },
-            { type: "image", src: "images/final3.png" },
+            { type: "image", src: "../images/Artboard 33 copy 2.png" },
+            { type: "image", src: "../images/final0.png" },
+            { type: "image", src: "../images/Artboard 334 copy 2.png" },
+            { type: "image", src: "../images/final1.png" },
+            { type: "image", src: "../images/final3.png" },
         ]
       },
 
@@ -198,11 +198,11 @@
         desc: "This portfolio project was created for Human Factor Design, focusing on visual communication and layout structure. The goal was to present information clearly while maintaining an engaging and professional aesthetic. The design balances typography, spacing, and imagery to enhance readability and storytelling.",
         tags: ["Project", "Layout Design"],
         media: [
-            { type: "image", src: "images/ปก portfolio.png" },
-            { type: "image", src: "images/5.png" },
-            { type: "image", src: "images/13.png" },
-            { type: "image", src: "images/14.png" },
-            { type: "image", src: "images/13 copy.png" },
+            { type: "image", src: "../images/ปก portfolio.png" },
+            { type: "image", src: "../images/5.png" },
+            { type: "image", src: "../images/13.png" },
+            { type: "image", src: "../images/14.png" },
+            { type: "image", src: "../images/13 copy.png" },
         ]
       },
 
@@ -212,7 +212,7 @@
         desc: "This voxel building project explores architectural form through modular design. The focus is on structure, proportion, and visual balance using simplified voxel elements. The project demonstrates an understanding of spatial composition and clean geometric design.",
         tags: ["Voxel", "3D Model"],
         media: [
-            { type: "image", src: "images/Artboard 31.png" }
+            { type: "image", src: "../images/Artboard 31.png" }
         ]
       },
 
@@ -222,7 +222,7 @@
         desc: "A Cup of Coffee is a voxel modeling project that focuses on everyday objects. The goal was to translate a simple object into a stylized 3D form while maintaining recognizability. This project highlights attention to detail, proportion, and presentation.",
         tags: ["Voxel", "3D Model"],
         media: [
-            { type: "image", src: "images/Artboard 32.png" }
+            { type: "image", src: "../images/Artboard 32.png" }
         ]
       },
 
@@ -232,7 +232,7 @@
         desc: "Bunny is a voxel character modeling project that emphasizes cuteness and simplicity. The design uses minimal forms to create a charming and expressive character. This work showcases my ability to communicate personality through simple geometry and clean design.",
         tags: ["Voxel", "Character", "3D Model"],
         media: [
-            { type: "image", src: "images/Artboard 33.png" }
+            { type: "image", src: "../images/Artboard 33.png" }
         ]
       },
 
@@ -242,7 +242,7 @@
         desc: "Bunny is a voxel character modeling project that emphasizes cuteness and simplicity. The design uses minimal forms to create a charming and expressive character. This work showcases my ability to communicate personality through simple geometry and clean design.",
         tags: ["3D Model", "3D Animation", "Character"],
         media: [
-            { type: "video", src: "videos/khaohom_story.mp4" }
+            { type: "video", src: "../videos/khaohom_story.mp4" }
         ]
       }
     };
